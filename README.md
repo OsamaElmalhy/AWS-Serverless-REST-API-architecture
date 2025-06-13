@@ -1,17 +1,17 @@
 # AWS-Serverless-REST-API-architecture
 
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates a fully serverless architecture built on AWS to host a secure, scalable, and cost-effective REST API for managing a simple to-do list or customer records. The backend is implemented using **Amazon API Gateway**, **AWS Lambda**, and **Amazon DynamoDB** to perform CRUD (Create, Read, Update, Delete) operations. The frontend is hosted using **Amazon S3** and delivered via **CloudFront**, while **Amazon Cognito** handles authentication.
 
 ---
 
-## 🧱 Architecture Summary
+##  Architecture Summary
 
-![Architecture Diagram](./96e4330e-a15b-4533-aa97-a54780065f3e.png)
+![Architecture Diagram](https://github.com/OsamaElmalhy/AWS-Serverless-REST-API-architecture/blob/main/Screenshot%202025-06-14%20022934.png)
 
-### 🔧 Services and Their Roles
+###  Services and Their Roles
 
 | Service                   | Role                                                                 |
 |---------------------------|----------------------------------------------------------------------|
@@ -28,7 +28,7 @@ This project demonstrates a fully serverless architecture built on AWS to host a
 
 ---
 
-## 🌐 How the Architecture Works
+##  How the Architecture Works
 
 1. **Frontend Hosting**
    - A user visits your domain managed by **Route 53**, which routes the request to **CloudFront**.
@@ -49,7 +49,7 @@ This project demonstrates a fully serverless architecture built on AWS to host a
 
 ---
 
-## ✅ Features
+##  Features
 
 - Fully **serverless** and scalable
 - HTTPS support with **SSL/TLS**
@@ -61,9 +61,8 @@ This project demonstrates a fully serverless architecture built on AWS to host a
 ---
 
 
----
 
-## 🚀 Deployment
+##  Deployment
 
 You can deploy this architecture using AWS SAM or the Serverless Framework. Be sure to configure your:
 - S3 bucket permissions
@@ -71,13 +70,6 @@ You can deploy this architecture using AWS SAM or the Serverless Framework. Be s
 - Cognito user pools and app clients
 - Lambda environment variables and IAM roles
 
----
-
-## 📌 Notes
-
-- Ensure CORS is configured correctly on both API Gateway and S3.
-- Fine-tune IAM roles to adhere to the principle of least privilege.
-- DynamoDB tables should have proper partition keys and indexes for efficient querying.
 
 
 
